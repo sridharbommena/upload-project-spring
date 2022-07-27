@@ -59,8 +59,8 @@ public class UploadUtil {
                 = (difference_In_Time
                 / (1000 * 60));
 
-            logger.debug("Difference in minutes: "+ difference_In_Minutes);
+//            logger.debug("Difference in minutes: "+ difference_In_Minutes);
             logger.debug("Difference in Days: "+difference_In_Days);
-            return difference_In_Minutes;
+            return difference_In_Days;
             }
 }

@@ -47,7 +47,7 @@ public class UploadServiceImpl implements UploadService {
             DocumentReference reference = queryFile.getReference();
             String timestamp = (String) queryFile.get("createdAt").toString();
             logger.debug("Timestamp of Doc: "+timestamp);
-            if(uploadUtil.timeDiffNow(timestamp)>=3*60)
+            if(uploadUtil.timeDiffNow(timestamp)>=1)
             {
                 String path = (String) queryFile.get("path");
                 deleteFromStorageByLocation(path);
