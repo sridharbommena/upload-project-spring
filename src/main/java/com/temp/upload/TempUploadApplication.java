@@ -22,7 +22,7 @@ public class TempUploadApplication {
         SpringApplication.run(TempUploadApplication.class, args);
     }
 
-    @Scheduled(cron = "0 0 0/3 1/1 * ? *")
+    @Scheduled(cron = "0 0 */3 * * *")
     public void perform()
     {
         logger.info("Scheduled method started");
